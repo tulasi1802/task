@@ -1,0 +1,26 @@
+.table-container {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color:rgb(201, 214, 224);
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+thead {
+  background-color: #aeafb0;
+}
+tbody tr:hover {
+  background-color: #aeafb0;
+  cursor: pointer;
+}
+

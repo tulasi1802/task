@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Chill Vibes",
+    "cover": "espresso.jpg",
+    "songs": [
+      { "title": "Relaxing Tune", "audio": "song1.mp3" },
+      { "title": "Cool Breeze", "audio": "song2.mp3" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Rock Anthems",
+    "cover": "orange.jpg",
+    "songs": [
+      { "title": "Loud Beat", "audio": "song3.mp3" },
+      { "title": "Firestorm", "audio": "song4.mp3" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Melody",
+    "cover": "perfect.jpg",
+    "songs": [
+      { "title": "Loud Beat", "audio": "song3.mp3" },
+      { "title": "Firestorm", "audio": "song4.mp3" }
+    ]
+  }
+]

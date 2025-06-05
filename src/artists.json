@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Taylor Swift",
+    "url": "taylorswift.jfif",
+    "description": "Taylor Swift is an American singer-songwriter known for narrative songs about her personal life.",
+    "songs": [
+      { "title": "Love Story", "audio": "levitating-thoughts-171709.mp3" },
+      { "title": "Blank Space", "audio": "song.mp3.mp3" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "The Weeknd",
+    "url": "dualipa.jfif",
+    "description": "The Weeknd is a Canadian singer, songwriter, and record producer, famous for his unique voice and style.",
+    "songs": [
+      { "title": "Blinding Lights", "audio": "levitating-thoughts-171709.mp3" },
+      { "title": "Starboy", "audio": "song1.mp3" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Arijit Singh",
+    "url": "ajsingh.webp",
+    "description": "Arijit Singh is a popular Indian playback singer known for his soulful voice in Bollywood music.",
+    "songs": [
+      { "title": "Tum Hi Ho", "audio": "tumhiho.mp3" },
+      { "title": "Channa Mereya", "audio": "channamereya.mp3" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dua Lipa",
+    "url": "dualipa.jfif",
+    "description": "Dua Lipa is a British singer and songwriter famous for her pop hits and distinctive voice.",
+    "songs": [
+      { "title": "Levitating", "audio": "levitating.mp3" },
+      { "title": "New Rules", "audio": "newrules.mp3" }
+    ]
+  }
+]

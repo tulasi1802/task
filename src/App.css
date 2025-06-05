@@ -1,38 +1,400 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #121212;
+  padding: 10px 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #1db954;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.side-menu {
+ 
+  background-color: #262525;
+  padding: 20px;
+  height: 200vh;
+  overflow-y: auto;
+  
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  padding: 10px 0;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+ color: white;
+  background-color: #141414;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+ 
 }
+
+.image-grid img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* footer {
+  background-color: #121212;
+  padding: 10px;
+  text-align: center;
+} */
+
+button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center; 
+  margin-top: 100px;
+  height: 100vh;          /* full viewport height */
+}
+
+.login input {
+  width: 300px;        /* fixed width */
+  max-width: 90vw;     /* responsive */
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #181818;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s;
+ 
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #7f7f7f;
+}
+
+.search-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #282828;
+  color: white;
+}
+form input,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* .container {
+  width: fit-content;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #738e99;
+} */
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ccc7c7;
+  font-family: serif;
+}
+
+.artists {
+  display: inline-flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.artist-card {
+  border: 1px solid #2a934b;
+ width: fit-content;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(126, 130, 128);
+  
+}
+
+.artist-card.selected {
+  border: 2px solid #007bff;
+  background: #e7f0ff;
+}
+
+.artist-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.artist-name {
+  margin-top: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.concert-select, .tickets-input, .user-input {
+  width: 50%;
+  padding: 6px 8px;
+  margin: 8px 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.book-button, .confirm-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-button:hover, .confirm-button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.user-form h3 {
+  margin-bottom: 15px;
+}
+/* SideMenu styles */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 250px;      /* wider side menu */
+  font-size: 20px;   /* bigger font */
+}
+
+ul li {
+  padding: 18px 25px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  height: 60px;      /* taller menu items */
+  display: flex;
+  align-items: center;
+}
+
+ul li:hover, ul li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Content Album Cards Grid */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Individual album or artist card */
+.card {
+  width: 300px;         /* larger width */
+  height: 350px;        /* larger height */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Album or artist image inside card */
+.card img {
+  width: 280px;      /* large image */
+  height: 280px;     /* large image */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Song play button */
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+.home-container {
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+  min-height: 150vh;
+}
+
+.home-title {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.card-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 5px;
+  border-radius: 12px;
+  width: 150px;
+  height:195px;
+  text-align: center;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 155px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* Premium.css */
+
+.premium-container {
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.premium-container h2 {
+  margin-bottom: 10px;
+}
+
+.premium-container p {
+  margin-bottom: 20px;
+}
+
